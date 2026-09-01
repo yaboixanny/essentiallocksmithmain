@@ -658,6 +658,63 @@ h1, h2, h3 {
     white-space: nowrap;
 }
 
+.owner-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+}
+
+.owner-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(36px, 6vw, 88px);
+    align-items: center;
+}
+
+.owner-image-wrap {
+    position: relative;
+}
+
+.owner-image {
+    width: 100%;
+    min-height: 520px;
+    border-radius: 28px;
+    object-fit: cover;
+    object-position: center 38%;
+    box-shadow: var(--shadow-lg);
+}
+
+.owner-image-caption {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    padding: 13px 16px;
+    border: 1px solid rgba(212, 168, 75, 0.25);
+    border-radius: 16px;
+    background: rgba(10, 22, 40, 0.92);
+    color: var(--white);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.owner-copy h2 {
+    max-width: 12ch;
+    color: var(--primary);
+    font-size: clamp(2.5rem, 4vw, 4.1rem);
+    letter-spacing: -0.045em;
+}
+
+.owner-copy p:not(.section-kicker) {
+    max-width: 58ch;
+    margin-top: 18px;
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+.owner-call {
+    margin-top: 30px;
+}
+
 .section {
     padding: 88px 0;
 }
@@ -1088,6 +1145,7 @@ h1, h2, h3 {
 @media (max-width: 1100px) {
     .hero-grid,
     .areas-grid,
+    .owner-grid,
     .service-grid,
     .feature-grid,
     .process-grid,
@@ -1229,6 +1287,7 @@ h1, h2, h3 {
 
     .hero-grid,
     .areas-grid,
+    .owner-grid,
     .quick-strip-inner,
     .footer-inner,
     .gallery-grid,
@@ -1371,6 +1430,43 @@ h1, h2, h3 {
         width: 100%;
         justify-content: center;
         white-space: normal;
+    }
+
+    .owner-section {
+        padding-top: 54px;
+    }
+
+    .owner-grid {
+        gap: 30px;
+    }
+
+    .owner-image {
+        min-height: 400px;
+        border-radius: 22px;
+        object-position: center 32%;
+    }
+
+    .owner-image-caption {
+        right: 14px;
+        bottom: 14px;
+        left: 14px;
+        padding: 11px 13px;
+        border-radius: 13px;
+        font-size: 0.94rem;
+    }
+
+    .owner-copy h2 {
+        max-width: 14ch;
+        font-size: clamp(2.25rem, 10vw, 3rem);
+    }
+
+    .owner-copy p:not(.section-kicker) {
+        font-size: 1rem;
+    }
+
+    .owner-call {
+        width: 100%;
+        margin-top: 24px;
     }
 
     .section {
