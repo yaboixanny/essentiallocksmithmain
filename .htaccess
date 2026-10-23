@@ -1,0 +1,16 @@
+Options -MultiViews
+RewriteEngine On
+
+# Consolidate legacy extension URLs to their clean canonical versions.
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^car-key-replacement-virginia-beach\.html$ /car-key-replacement-key-fob-programming-virginia-beach [R=301,L]
+RewriteRule ^car-key-replacement\.html$ /car-key-replacement-key-fob-programming-virginia-beach [R=301,L]
+RewriteRule ^key-fob-programming-virginia-beach\.html$ /car-key-replacement-key-fob-programming-virginia-beach [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]|$) [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
+
+# Serve clean URLs from the matching static HTML file.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]

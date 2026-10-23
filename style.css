@@ -715,6 +715,43 @@ h1, h2, h3 {
     margin-top: 30px;
 }
 
+.seo-detail {
+    background: #f7f9fc;
+}
+
+.seo-detail-grid,
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.seo-detail-card,
+.faq-item {
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.seo-detail-card h3,
+.faq-item h3 {
+    color: var(--primary);
+    font-size: 1.35rem;
+}
+
+.seo-detail-card p,
+.faq-item p {
+    margin-top: 10px;
+    color: var(--text-light);
+}
+
+.seo-detail-card a {
+    color: var(--accent-dark);
+    font-weight: 800;
+}
+
 .section {
     padding: 88px 0;
 }
@@ -1146,6 +1183,8 @@ h1, h2, h3 {
     .hero-grid,
     .areas-grid,
     .owner-grid,
+    .seo-detail-grid,
+    .faq-grid,
     .service-grid,
     .feature-grid,
     .process-grid,
@@ -1288,6 +1327,8 @@ h1, h2, h3 {
     .hero-grid,
     .areas-grid,
     .owner-grid,
+    .seo-detail-grid,
+    .faq-grid,
     .quick-strip-inner,
     .footer-inner,
     .gallery-grid,
@@ -1467,6 +1508,11 @@ h1, h2, h3 {
     .owner-call {
         width: 100%;
         margin-top: 24px;
+    }
+
+    .seo-detail-card,
+    .faq-item {
+        padding: 22px;
     }
 
     .section {

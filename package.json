@@ -2,6 +2,8 @@
   "name": "essential-locksmith-main-site",
   "private": true,
   "scripts": {
-    "generate:sitemap": "node scripts/generate-sitemap.mjs"
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "normalize:seo": "node scripts/normalize-seo.mjs",
+    "prepare:seo": "npm run normalize:seo && npm run generate:sitemap"
   }
 }

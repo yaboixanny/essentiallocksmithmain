@@ -50,7 +50,7 @@ const lastModified = async (filePath) => {
 const htmlFiles = await listHtmlFiles(rootDirectory);
 const urls = await Promise.all(htmlFiles.sort().map(async (filePath) => {
     const relativePath = path.relative(rootDirectory, filePath).split(path.sep).join("/");
-    const urlPath = relativePath === "index.html" ? "/" : "/" + relativePath;
+    const urlPath = relativePath === "index.html" ? "/" : "/" + relativePath.replace(/\.html$/, "");
 
     return {
         lastModified: await lastModified(filePath),
