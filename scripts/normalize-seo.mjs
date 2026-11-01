@@ -14,8 +14,12 @@ for (const fileName of htmlFiles) {
 
     source = source.replace(/<link rel="canonical" href="[^"]*">\s*/i, "");
     source = source.replace(/(<head[^>]*>)/i, "$1\n    " + canonical);
-    source = source.replace(/href="index\.html(?=("|#))/g, 'href="/"');
-    source = source.replace(/href="([a-z0-9-]+)\.html(?=("|#))/gi, 'href="/$1');
+    source = source.replace(/href="index\.html"/g, 'href="/"');
+    source = source.replace(/href="index\.html#/g, 'href="/#');
+  source = source.replace(/href="\/"(?=#)/g, 'href="/');
+    source = source.replace(/href="([a-z0-9-]+)\.html"/gi, 'href="/$1"');
+    source = source.replace(/href="([a-z0-9-]+)\.html#/gi, 'href="/$1#');
+    source = source.replace(/href="(\/[^"]*)""/g, 'href="$1"');
 
     await writeFile(filePath, source, "utf8");
 }
