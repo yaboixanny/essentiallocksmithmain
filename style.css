@@ -755,6 +755,84 @@ h1, h2, h3 {
     background: #f7f9fc;
 }
 
+.coverage-section {
+    background: #f2f6fa;
+}
+
+.coverage-heading {
+    max-width: 850px;
+    margin-bottom: 22px;
+}
+
+.coverage-heading p:last-child {
+    max-width: 60ch;
+}
+
+.coverage-neighborhoods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.coverage-neighborhoods span {
+    padding: 7px 13px;
+    border: 1px solid #d7e3ed;
+    border-radius: 999px;
+    background: #fff;
+    color: #244968;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.coverage-card {
+    padding: 26px;
+    border: 1px solid #dce7ef;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(15, 48, 75, 0.06);
+}
+
+.coverage-icon {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: #e8f1f8;
+    color: #17608b;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.coverage-card h3 {
+    color: var(--primary);
+    font-size: 1.22rem;
+}
+
+.coverage-card p {
+    margin-top: 10px;
+    color: var(--text-light);
+    font-size: 0.94rem;
+}
+
+@media (max-width: 1100px) {
+    .coverage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+    .coverage-grid { grid-template-columns: 1fr; gap: 12px; }
+    .coverage-card { padding: 20px; }
+    .coverage-icon { margin-bottom: 14px; }
+}
+
 .seo-detail-grid,
 .faq-grid {
     display: grid;
