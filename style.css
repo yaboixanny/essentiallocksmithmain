@@ -492,12 +492,13 @@ h1, h2, h3 {
 }
 
 @media (min-width: 801px) {
-    .home-hero h1 {
+    .hero h1 {
         max-width: none;
     }
 
-    .home-hero h1 span {
+    .hero h1 span {
         display: block;
+        white-space: nowrap;
     }
 
     .hero-grid:has(> .hero-copy > .hero-points) {
