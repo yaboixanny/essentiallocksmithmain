@@ -688,6 +688,12 @@ h1, h2, h3 {
     white-space: nowrap;
 }
 
+.quick-strip-button::before,
+.quick-phone::before {
+    content: "\260E";
+    margin-right: 8px;
+}
+
 .owner-section {
     background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
 }
