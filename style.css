@@ -947,6 +947,30 @@ h1, h2, h3 {
     box-shadow: var(--shadow-lg);
 }
 
+.home-hero .hero-reviews-widget {
+    width: fit-content;
+    max-width: 100%;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.home-hero .hero-reviews-widget .google-review-logo {
+    width: 25px;
+    height: 25px;
+    font-size: 1.1rem;
+}
+
+.home-hero .hero-reviews-widget .google-review-copy strong {
+    font-size: 0.8rem;
+}
+
+.home-hero .hero-reviews-widget .google-review-copy > span:last-child {
+    font-size: 0.72rem;
+}
+
 .google-review-logo {
     display: grid;
     place-items: center;
