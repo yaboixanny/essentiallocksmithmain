@@ -295,7 +295,8 @@ h1, h2, h3 {
     margin-inline: auto;
 }
 
-.home-hero .hero-cta-row {
+.home-hero .hero-cta-row,
+.home-hero .hero-actions {
     justify-content: center;
 }
 
