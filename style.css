@@ -491,6 +491,14 @@ h1, h2, h3 {
 }
 
 @media (min-width: 801px) {
+    .home-hero h1 {
+        max-width: none;
+    }
+
+    .home-hero h1 span {
+        display: block;
+    }
+
     .hero-grid:has(> .hero-copy > .hero-points) {
         min-height: 470px;
     }
