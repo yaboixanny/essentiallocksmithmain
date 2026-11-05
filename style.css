@@ -927,6 +927,26 @@ h1, h2, h3 {
     box-shadow: var(--shadow-sm);
 }
 
+.home-services .service-card {
+    border: 1px solid #dce7ef;
+    border-radius: 20px;
+    background: #f8fafc;
+    box-shadow: 0 10px 30px rgba(15, 48, 75, 0.06);
+}
+
+.home-services .service-card h3 {
+    font-size: 1.22rem;
+}
+
+.home-services .service-card p {
+    font-size: 0.94rem;
+}
+
+.home-services .service-card p a {
+    color: #17608b;
+    font-weight: 700;
+}
+
 .service-card h3 {
     font-size: 1.45rem;
     color: var(--primary);
